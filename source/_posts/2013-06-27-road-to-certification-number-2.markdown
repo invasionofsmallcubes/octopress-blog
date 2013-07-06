@@ -3,7 +3,7 @@ layout: post
 title: "Road to Certification #2"
 date: 2013-06-27 21:07
 comments: true
-categories: [Sun, Certification, SCJP, OSCJP] 
+categories: [Sun, Certification, SCJP, OSCJP, JAVA6] 
 ---
 ##Modifiers For Class Members
 ###Access Modifiers

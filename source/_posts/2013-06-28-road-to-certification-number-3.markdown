@@ -3,7 +3,7 @@ layout: post
 title: "Road to Certification #3"
 date: 2013-06-28 21:36
 comments: true
-categories: [Sun, Certification, SCJP, OSCJP] 
+categories: [Sun, Certification, SCJP, OSCJP, JAVA6]
 ---
 ##Enum
 You can declare an *enum* inside a class or in a dedicated file. You can't declare it inside a class method.

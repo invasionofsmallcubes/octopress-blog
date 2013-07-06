@@ -3,7 +3,7 @@ layout: post
 title: "Road to Certification #6"
 date: 2013-07-02 19:02
 comments: true
-categories: [Sun, Certification, SCJP, OSCJP]
+categories: [Sun, Certification, SCJP, OSCJP, JAVA6]
 ---
 ##More on Variables
 ###Variable scope

@@ -3,7 +3,7 @@ layout: post
 title: "Road to Certification #8"
 date: 2013-07-04 12:30
 comments: true
-categories: [Sun, Certification, SCJP, OSCJP]
+categories: [Sun, Certification, SCJP, OSCJP, JAVA6]
 ---
 ##Autoboxing, *==* and *equals()*
 Today we will talk a bit more about wrappers. Autoboxing is the concept that allows you to do something like:

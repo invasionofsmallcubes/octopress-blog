@@ -3,7 +3,7 @@ layout: post
 title: "Road to Certification #7"
 date: 2013-07-03 11:42
 comments: true
-categories: [Sun, Certification, SCJP, OSCJP]
+categories: [Sun, Certification, SCJP, OSCJP, JAVA6]
 ---
 ##How to assign elements to an array
 For arrays of primitive types, it's possible to assign those elements that you can implicitly cast to the type of the array. Here's an example:
