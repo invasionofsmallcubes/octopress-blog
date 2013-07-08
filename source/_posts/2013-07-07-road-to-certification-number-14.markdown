@@ -32,3 +32,17 @@ while (m.find()) { // for every occurrence found
 }
 ```
 
+##Formatting
+To do the job you can use `format` and `printf` from Java 5 for the class `PrintStream`.
+
+Here's the syntax (`[]` means optional) : `%[arg_index$][flags][width][precision] conversion`.
+
+* `arg_index` position in the var-arg you are passing to the method, 1-based;
+* `flags`:
+	* `-`: justify to the left;
+	* `+`: add plus or minus sign;
+	* `0`: pad with zero;
+	* `,`: `Locale` specific separator;
+	* `(`: negative numbers between parenthesis;
+* `precision`: precision for floating-point;
+* `conversion` : **b** boolean, **c** char, **d** integer, **f** floating-point, **s** string. It's possible to have `IllegalFormatConversionException` if we use `d` but then we pass a double;
