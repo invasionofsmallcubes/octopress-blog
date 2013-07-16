@@ -3,7 +3,7 @@ layout: post
 title: "Road to Certification #12"
 date: 2013-07-08 12:13
 comments: true
-categories: [Sun, Certification, SCJP, OSCJP, JAVA6]
+categories: [Sun, Certification, SCJP, OSCJP, JAVA6, Strings, StringBuilder, Scanner]
 ---
 ##Strings
 `String` is an immutable object. Every character of a string is Unicode 16-bit. The `String` class is marked **final**. To create a string I can do the following:

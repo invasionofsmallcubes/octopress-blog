@@ -3,7 +3,7 @@ layout: post
 title: "Road to Certification #3"
 date: 2013-06-28 21:36
 comments: true
-categories: [Sun, Certification, SCJP, OSCJP, JAVA6]
+categories: [Sun, Certification, SCJP, OSCJP, JAVA6, Enum, Override, Overload]
 ---
 ##Enum
 You can declare an *enum* inside a class or in a dedicated file. You can't declare it inside a class method.
@@ -49,10 +49,12 @@ public enum CoffeeSize {
 
 
 ##A little bit of OOP principles
-In the certification there is some question about OOP principles: *encapsulation* and *inheritance*.
+In the certification there is some question about OOP principles: *encapsulation*, *inheritance*, *cohesion* and *decoupling*.
 
-With inheritance is possible to use methods from a superclass and override them when necessary. With encapsulation you basically apply the
-principle to access the state of your object in a controlled way, giving to a private attribute of your class an access from the outside using specific methods called getters and setters.
+With *inheritance* is possible to use methods from a superclass and override them when necessary. With *encapsulation* you basically apply the
+principle to access the state of your object in a controlled way, giving to a private attribute of your class an access from the outside using specific methods called getters and setters. With *cohesion* you want a single class to be dedicated to a single responsibility. With *decoupling* you want your class to access another class only using "other class" API.
+
+For deep information you should google these terms. Wikipedia is your friend.
 
 ###Relationships between classes
 We have two kind of relationship:
@@ -78,6 +80,57 @@ These are the rules for a legal override:
 * can throw unchecked exceptions;
 * checked exceptions only if they're equals or subclass of the ones thrown by the parents;
 * you don't override a method if it's final or static;
+
+> ####Be aware that:
+> Variable shadowing is a pain in the ass. When it comes to inheritance, this pain in the ass increases. I found an example that is really clear on how to handle these cases. Look at it because questions about this problem could be in the exam.
+
+``` java HANDLING VARIABLE SHADOWING WITH INHERITANCE
+class Parent {
+    static String x="static in parent";
+    String y="instance in parent";
+}
+class Child extends Parent {
+    static String y="static in child";
+    String x="instance in child";
+    void foo() {
+        System.out.println("x "+x);
+        System.out.println("super.x " + super.x); 
+        System.out.println("y "+y);
+        System.out.println("super.y " + super.y); 
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Parent parent=new Parent();
+        Child child=new Child();
+        System.out.println("Parent.x "+Parent.x);
+        System.out.println("parent.x "+Parent.x); 
+        System.out.println("parent.y "+parent.y);
+        System.out.println("child.x "+child.x);
+        System.out.println("Child.y "+Child.y);
+        System.out.println("child.y "+child.y);
+        System.out.println("(Parent)child).x "+((Parent)child).x);
+        System.out.println("(Parent)child).y "+((Parent)child).y);
+        child.foo();
+    }
+}
+```
+
+The output will be:
+```
+Parent.x static in parent
+parent.x static in parent
+parent.y instance in parent
+child.x instance in child
+Child.y static in child
+child.y static in child
+(Parent)child).x static in parent
+(Parent)child).y instance in parent
+x instance in child
+super.x static in parent
+y static in child
+super.y instance in parent
+```
 
 ####Overload
 A method must change the list of the parameters. Optionally you can change the return type, the access modifier and throw new exception.

@@ -3,7 +3,7 @@ layout: post
 title: "Road to Certification #20"
 date: 2013-07-16 15:51
 comments: true
-categories: [Sun, Certification, SCJP, OSCJP, JAVA6]
+categories: [Sun, Certification, SCJP, OSCJP, JAVA6, Command line tools]
 ---
 ##Command line tools
 **javac** is the command to control the compiler. The syntax is the following: `javac [options] [source files]`. Possible options are:
@@ -15,7 +15,7 @@ categories: [Sun, Certification, SCJP, OSCJP, JAVA6]
 
 * `-Dprop=val` if the value contains space you have to use `-Dprop="my val"`. To get a value you can use `System.getProperty("prop");`
 * - `[args]` it's a 0-indexed array and you can pass them to the main method:
-
+<!-- more -->
 ``` java DECLARATION OF MAIN
 public static void main(String[] args) {}
 public static void main(String ... x) {}

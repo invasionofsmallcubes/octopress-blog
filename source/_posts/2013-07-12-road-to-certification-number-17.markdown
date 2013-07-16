@@ -3,7 +3,7 @@ layout: post
 title: "Road to Certification #17"
 date: 2013-07-13 19:41
 comments: true
-categories: [Sun, Certification, SCJP, OSCJP, JAVA6]
+categories: [Sun, Certification, SCJP, OSCJP, JAVA6, Generics]
 ---
 ##Generics
 `List myList = new ArrayList()` can accept any type of object (never primitives - well, with wrappers). With the usage of generics you are bound to declare the type of the Elements contained at compile time so we get compilation errors if we try to add a something different from what we defined.

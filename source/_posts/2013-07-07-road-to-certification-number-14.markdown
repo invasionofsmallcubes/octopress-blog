@@ -3,7 +3,7 @@ layout: post
 title: "Road to Certification #14"
 date: 2013-07-10 15:03
 comments: true
-categories: [Sun, Certification, SCJP, OSCJP, JAVA6]
+categories: [Sun, Certification, SCJP, OSCJP, JAVA6, Date, Numbers, Currency, Regexp]
 ---
 ##Date, numbers and currency
 

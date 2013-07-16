@@ -3,7 +3,7 @@ layout: post
 title: "Road to Certification #9"
 date: 2013-07-05 18:01
 comments: true
-categories: [Sun, Certification, SCJP, OSCJP, JAVA6]
+categories: [Sun, Certification, SCJP, OSCJP, JAVA6, Operators]
 ---
 ##Comparison Operators
 

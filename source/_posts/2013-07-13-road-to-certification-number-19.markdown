@@ -14,7 +14,7 @@ With the word *thread* in Java we indicates two things:
 There two types of thread: a user and a demon thread. JVM exits from executon only when every user thread has finished. It doesn't consider demon threads status.
 
 You can create a Thread *extending* the class `Thread` or implementing the interface `Runnable`. The method to override in both cases is `public void run()`. It's legal to overload `run()` but only `public void run()` is considered when it comes to create a new thread of execution.
-
+<!-- more -->
 To instantiate a thread we have four constructors: 
 
 * `Thread()`;
@@ -51,7 +51,7 @@ In many cases the thread in state **running** will be the one that has higher pr
 
 A thread has initially the same priority of the current thread where it gets instantiated, but you can set it directly with `setPriority()`.
 
-In Java the default priority is 5. You also have `Thread.MIN_PRIORITY`, `Thread.NORM_PRIORITY`, `Thread.MAX_PRIORITY`. It's JVM implementation dependent.
+In Java the default priority is 5. You also have `Thread.MIN_PRIORITY`(1), `Thread.NORM_PRIORITY`(5), `Thread.MAX_PRIORITY`(10).
 
 ###Synchronizing
 

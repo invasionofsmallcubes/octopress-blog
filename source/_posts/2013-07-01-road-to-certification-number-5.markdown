@@ -3,7 +3,7 @@ layout: post
 title: "Road to Certification #5"
 date: 2013-07-01 21:15
 comments: true
-categories: [Sun, Certification, SCJP, OSCJP, JAVA6]
+categories: [Sun, Certification, SCJP, OSCJP, JAVA6, Literals]
 ---
 ##Literals
 A **literal** primitive is a representation i the source code of primitive data.

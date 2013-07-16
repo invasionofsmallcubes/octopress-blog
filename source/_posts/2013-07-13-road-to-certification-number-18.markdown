@@ -3,7 +3,7 @@ layout: post
 title: "Road to Certification #18"
 date: 2013-07-14 11:22
 comments: true
-categories: [Sun, Certification, SCJP, OSCJP, JAVA6]
+categories: [Sun, Certification, SCJP, OSCJP, JAVA6, Inner Classes]
 ---
 ##Inner Classes
 A **regular inner class** is able to reach members of the outer class. A regular inner class is not declared static, it's not a local method inner class and it's not anonymous.

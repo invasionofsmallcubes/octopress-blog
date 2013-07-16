@@ -3,7 +3,7 @@ layout: post
 title: "Road to Certification #13"
 date: 2013-07-09 14:33
 comments: true
-categories: [Sun, Certification, SCJP, OSCJP, JAVA6]
+categories: [Sun, Certification, SCJP, OSCJP, JAVA6, Serialization]
 ---
 ###Console
 Console is abstract, there is no constructor. You get the console via `System.console()`. Useful methods are `String readLine("%s", "input: ")` and `char[] readPassword()`. 

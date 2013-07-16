@@ -3,7 +3,7 @@ layout: post
 title: "Road to Certification #4"
 date: 2013-06-29 09:21
 comments: true
-categories: [Sun, Certification, SCJP, OSCJP, JAVA6]
+categories: [Sun, Certification, SCJP, OSCJP, JAVA6, Override]
 ---
 ####Still About Override
 The keyword **implements** is used by a class to implement an *interface*:

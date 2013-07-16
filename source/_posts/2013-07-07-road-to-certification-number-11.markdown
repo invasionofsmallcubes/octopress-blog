@@ -3,7 +3,7 @@ layout: post
 title: "Road to Certification #11"
 date: 2013-07-07 11:11
 comments: true
-categories: [Sun, Certification, SCJP, OSCJP, JAVA6]
+categories: [Sun, Certification, SCJP, OSCJP, JAVA6, Exception Handling]
 ---
 ##Exception Handling
 The syntax for handling exception is:

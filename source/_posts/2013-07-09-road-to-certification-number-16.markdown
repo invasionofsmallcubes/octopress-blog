@@ -3,7 +3,7 @@ layout: post
 title: "Road to Certification #16"
 date: 2013-07-12 19:46
 comments: true
-categories: [Sun, Certification, SCJP, OSCJP, JAVA6]
+categories: [Sun, Certification, SCJP, OSCJP, JAVA6, Comparable, Comparator, Collections]
 ---
 ##Ordering Arrays And Collections
 There are utility methods in classes `Arrays` and `Collections` to order elements.

@@ -3,7 +3,7 @@ layout: post
 title: "Road to Certification #1"
 date: 2013-06-26
 comments: true
-categories: [Sun, Certification, SCJP, OSCJP, JAVA6] 
+categories: [Sun, Certification, SCJP, OSCJP, JAVA6, Identifiers, Code Conventions, JavaBeans, Modifiers] 
 ---
 ##Classes, methods and attributes
 

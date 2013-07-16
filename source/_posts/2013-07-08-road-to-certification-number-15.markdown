@@ -3,7 +3,7 @@ layout: post
 title: "Road to Certification #15"
 date: 2013-07-11 19:27
 comments: true
-categories: [Sun, Certification, SCJP, OSCJP, JAVA6]
+categories: [Sun, Certification, SCJP, OSCJP, JAVA6, Collections]
 ---
 ## equals() and hasCode()
 When you want to use an object as key of an hashtable, it's necessary to override `equals()` and `hashCode()`.
