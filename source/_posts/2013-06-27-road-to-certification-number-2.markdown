@@ -17,7 +17,7 @@ categories: [Sun, Certification, SCJP, OSCJP, JAVA6, Modifiers, Constructors ]
 ###Non-access Modifier For Class Members
 * **final**: used on methods implies you can't override them in the subclasses. Used on variables remove the ability to reassign them to other values. Be aware that in case a variables point to an object, you just can assign to it a new object but you can modify the state of the object;
 * **abstract**: used on methods implies the method is not implemented. When a method is abstract the class *must* be abstract or you'll have a compilation error;
-* **static**: used on methods or variables indicates it's a class level member. Since you cannot override class level members, you cannot use static with abstract;
+* **static**: used on methods or variables indicates it's a class level member. Since you cannot override class level members, you cannot use static with abstract. A static variable can be used in the subclass without the need of using the class name like `StaticClass.x`;
 * **synchronized**: used on a methods, allows only one thread to access it at the time. You can use it also with code blocks.
 * **strictfp**: we saw that on classes, we can also use it on methods;
 * **transient**: you can use it on class attributes to specify that they must not be considered during serialization (more on this in future posts);

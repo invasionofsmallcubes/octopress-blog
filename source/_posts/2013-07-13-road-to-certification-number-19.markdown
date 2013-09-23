@@ -3,7 +3,7 @@ layout: post
 title: "Road to Certification #19"
 date: 2013-07-15 15:50
 comments: true
-categories: [Sun, Certification, SCJP, OSCJP, JAVA6]
+categories: [Sun, Certification, SCJP, OSCJP, JAVA6, Concurrency, Threads]
 ---
 ##Java Concurrency
 With the word *thread* in Java we indicates two things:
@@ -44,6 +44,9 @@ When you excute more then one thread, you can assure that every thread will be e
 * `sleep()` it's static and accepts the number of milliseconds. It does not release acquired locks. Launches a `InterruptedException`; 
 * `yield()` it's static and launches an `InterruptedException`. It tells to the current thread to go back to the state runnable to leave space to other threads but remember that the scheduler decides what to do;
 * `join()` it's an instance method, when called tells to the current thread to wait for the thread who called the `join()` to end. It launches an `InterruptedException`;
+
+> ####Be aware that:
+> When the method `run()` finishes the thread sends a `notifyAll()` so that if some other thread was waiting on that very same thread, it will wake up.
 
 ###Thread priority
 

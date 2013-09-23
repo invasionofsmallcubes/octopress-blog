@@ -44,12 +44,16 @@ A variable can contain a primitive type or a reference to an object. In both cas
 
 It's possible to assign to a primitive variable a literal or the result of an expression. For integers if do an operation (**+ - * /**) between integers and a subtype (like byte) the expression returns always an integer.
 
+
+If you write `byte b; byte a = 1; byte b = 5; b = a + b;` you'll get a compiler error because the compiler automatically casts those two variables to int so you get a compiler error. That (easy) solution is up to you.
+
 ###Primitive casting
 Casts can be implicit or explicit. A cast is implicit if you are doing a widening operation (e.g.: you put a byte into an int). Explicit cast is needed when narrowing (e.g: you put an int into a byte - duh!). Doing an explicit cast is risky because you can assign out of range values. Be aware that you don't get a runtime exception, you just get the left-most bit flipped.
-
+luti
 If you assign to a primitive a value that is too large without an explicit casting you get a compilation error.
 
 With a **compound operator** (+=, -=, *= and /=) the cast is implicit: `b+=7` is `b=(byte)b+7` so you don't get a compilation error when doing `bit+=128;`.
+
 
 If you assign a variable to another variable you are just copying the value of that variable. The two variables are not connected at all. In case of reference variable you are copying the reference of the variable and they are also disconnected:
 ``` java VARIABLE ASSIGNMENT

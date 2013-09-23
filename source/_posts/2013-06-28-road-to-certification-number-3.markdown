@@ -104,7 +104,7 @@ public class Main {
         Parent parent=new Parent();
         Child child=new Child();
         System.out.println("Parent.x "+Parent.x);
-        System.out.println("parent.x "+Parent.x); 
+        System.out.println("parent.x "+parent.x); 
         System.out.println("parent.y "+parent.y);
         System.out.println("child.x "+child.x);
         System.out.println("Child.y "+Child.y);
@@ -131,6 +131,7 @@ super.x static in parent
 y static in child
 super.y instance in parent
 ```
+Remember that polymorphism is applied only in instance methods, not for attributes.
 
 ####Overload
 A method must change the list of the parameters. Optionally you can change the return type, the access modifier and throw new exception.
